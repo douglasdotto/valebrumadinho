@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MC Gerador de Cards</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="css/style.css?v=1" />
+  <link rel="stylesheet" href="css/responsive.css?v=1" />
+  <link rel="stylesheet" href="css/barra-globocom.min.css?v=1">
+  <link rel="stylesheet" href="css/barra.css?v=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css?v=1">
+  <link href="./css/owl.carousel.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="barra js-barra">
+    <div class="barra__main js-barraMain" style="background-color: #C4170C">
+      <div class="barra__wrapper">
+        <a class="barra__link" href="https://gshow.globo.com/">
+          <h4 class="barra__title"><img src="./img/gshow.svg" style="fill: white; width: 30%;"></h4>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-1">
+    <div class="masthead__tag" style="margin: 2rem 0;">
+      <div class="tag">
+        Especial Publicitário
+      </div>
+    </div>
+    <div class="banner">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title">
+            <h1>ACORDO DE REPARAÇÃO POR <b>BRUMADINHO</b></h1>
+          </div>
+        </div>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+          <div class="subtitle">
+            <p>Vale desenbolsou <b>R$ 18,5 bilhões</b>. Veja como estão sendo aplicados os recursos em Minas Gerais</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-12">          
+          <div class="imagem justify-content-center">
+            <a href="quotes" class="btn-entenda">
+              <img class="chevron pointer" src="./img/down-chevron-svgrepo-com.svg" alt="">
+              <span>Entenda</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quotes">
+      
+    </div>
+  </div>
+  <div class="footer py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-1 col-md-2 col-sm-2 col-3 logo_mc">
+          <img src="./img/04. Footer/Logo Méqui.png" alt="">
+        </div>
+        <div class="col-md-9 offset-md-1 col-lg-5 offset-lg-2 col-9 d-flex align-items-center">
+          <img class="bonecos" src="./img/04. Footer/Bonecos.png" alt="">
+          <div class="texto">
+            <p style="font-weight: 600;">Mandou bem na escolha! Pra dividir um Mega do Méqui tem que ser brother mesmo.
+            </p>
+            <a href="" class="">Ver mais</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 offset-lg-1 align-items-center">
+          <div class="up d-flex ">
+            <img src="./img/04. Footer/Hamburger.png" alt="">
+            <div class="texto pl-2">
+              <p>Mostra pra galera quem mataria a fome de Méqui com você</p>
+            </div>
+          </div>
+          <div class="social_media d-flex align-items-center justify-content-lg-around">
+            <a target="_blank" class="pointer"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://especial.gshow.globo.com/especial-publicitario/bbb/mequi/gerador-de-cards">
+              <img src="./img/04. Footer/Facebook.png" alt="">
+            </a>
+            <a target="_blank" class="pointer"
+              href="https://twitter.com/intent/tweet?url=https://especial.gshow.globo.com/especial-publicitario/bbb/mequi/gerador-de-cards&text=">
+              <img src="./img/04. Footer/Twitter.png" alt="">
+            </a>
+            <a target="_blank" class="pointer"
+              href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://especial.gshow.globo.com/especial-publicitario/bbb/mequi/gerador-de-cards">
+              <img src="./img/04. Footer/Email.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="js/barra-globocom.min.js?v=1"></script>
+<script src="js/barra.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script>
+  let selectedBrotherToShare = "Arthur";
+  let selectedMegaToShare = "Mega McNuggets";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    let field = document.querySelector('.field');
+    let input = document.querySelector('input');
+    let copyBtn = document.querySelector('.field button');
+
+    copyBtn.onclick = () => {
+      input.select();
+      if (document.execCommand("copy")) {
+        field.classList.add('active');
+        copyBtn.innerText = 'Copiado';
+        setTimeout(() => {
+          field.classList.remove('active');
+          copyBtn.innerText = 'Copiar';
+        }, 3500)
+      }
+    }
+
+    const setActiveBrother = () => {
+      let brothers = null;
+      if (document.querySelector(".brother_slider") != null) {
+        brothers = document.querySelectorAll(".brother_slider .owl-stage-outer .owl-stage .owl-item:not(.cloned) .image_brother");
+      }
+      brothers.forEach((brother) => {
+        brother.addEventListener('click', function () {
+          const selectedbrother = document.querySelector('.brother_active');
+          selectedbrother.classList.remove("brother_active")
+          brother.classList.add("brother_active")
+          selectedBrotherToShare = brother.getAttribute('data-name').trim();
+        })
+      })
+    }
+
+    const setActiveMega = () => {
+      const megas = document.querySelectorAll(".mc_slider .owl-stage-outer .owl-stage .owl-item:not(.cloned) .image_mc");
+      megas.forEach((mega) => {
+        mega.addEventListener('click', function () {
+          const selectedMega = document.querySelector('.image_mc.active_mc');
+          selectedMega.classList.remove("active_mc");
+          mega.classList.add("active_mc");
+          selectedMegaToShare = mega.getAttribute('data-name').trim();
+        })
+      })
+    }
+
+    const setTimes = setTimeout(() => {
+      setActiveBrother();
+      setActiveMega();
+    }, 500);
+  });
+
+  $(document).ready(function () {
+    $('.mc_slider').owlCarousel({
+      loop: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: true,
+        },
+        768: {
+          items: 3,
+          nav: true,
+        }
+      }
+    });
+
+    $('.brother_slider').owlCarousel({
+      loop: false,
+      responsiveClass: true,
+      autoWidth: false,
+      responsive: {
+        0: {
+          items: 2,
+          nav: true,
+        },
+        768: {
+          items: 3,
+          nav: true,
+        }
+      }
+    });
+  });
+
+  function compartilhar() {
+    $(".page-1").hide();
+
+    var shareface = "https://www.facebook.com/sharer/sharer.php?u=especial.gshow.globo.com/especial-publicitario/bbb/mequi/gerador-de-cards/";
+    var sharetwt = "https://twitter.com/intent/tweet?url=https://especial.gshow.globo.com/especial-publicitario/bbb/mequi/gerador-de-cards/";
+    var sharemail = "mailto:info@example.com?&subject=&cc=&bcc=&body=";
+    var sharelink = "https://especial.gshow.globo.com/especial-publicitario/bbb/mequi/gerador-de-cards/";
+    var lanche = "";
+    var participante = "";
+    var share = "";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log(selectedBrotherToShare)
+    console.log(selectedMegaToShare)
+
+    $("#participante-selecionado").html(selectedBrotherToShare);
+    if (selectedMegaToShare == "Mega McNuggets") {
+      $("#lanche-selecionado").html("seu MEGA McNuggets");
+      lanche = "Mega McNuggets";
+      $("#text-selecionado").html("Méquizice leve, crocante e deliciosa é com você, né? Seu Mega McNuggets é a melhor ideia para matar a fome de Méqui com o brother. Se vai dizer que acabou quando a caixinha ainda tá cheia só pra não dividir, é outra história.");
+
+      switch (selectedBrotherToShare) {
+        case 'Arthur':
+          participante = "Arthur";
+          share = "mcnuggets/arthur";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/A3.png"); break;
+        case 'Brunna':
+          participante = "Brunna";
+          share = "mcnuggets/brunna";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/BR3.png"); break;
+        case 'Bárbara':
+          participante = "Bárbara";
+          share = "mcnuggets/barbara";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/BAR3.png"); break;
+        case 'Douglas':
+          participante = "Douglas";
+          share = "mcnuggets/douglas";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/D3.png"); break;
+        case 'Eliezer':
+          participante = "Eliezer";
+          share = "mcnuggets/eliezer";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/EL3.png"); break;
+        case 'Eslovênia':
+          participante = "Eslovênia";
+          share = "mcnuggets/eslovenia";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/ESL3.png"); break;
+        case 'Gustavo':
+          participante = "Gustavo";
+          share = "mcnuggets/gustavo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/G3.png"); break;
+        case 'Jessilane':
+          participante = "Jessilane";
+          share = "mcnuggets/jessi";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/J3.png"); break;
+        case 'Jade Picon':
+          participante = "Jade Picon";
+          share = "mcnuggets/jade";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/JA3.png"); break;
+        case 'Laís':
+          participante = "Laís";
+          share = "mcnuggets/lais";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LA3.png"); break;
+        case 'Larissa':
+          participante = "Larissa";
+          share = "mcnuggets/larissa";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LAR3.png"); break;
+        case 'Luciano':
+          participante = "Luciano";
+          share = "mcnuggets/luciano";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/L3.png"); break;
+        case 'Linn':
+          participante = "Linn";
+          share = "mcnuggets/linn";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LIN3.png"); break;
+        case 'Lucas':
+          participante = "Lucas";
+          share = "mcnuggets/lucas";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LU3.png"); break;
+        case 'Maria':
+          participante = "Maria";
+          share = "mcnuggets/maria";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/MA3.png"); break;
+        case 'Natália':
+          participante = "Natália";
+          share = "mcnuggets/natalia";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/N3.png"); break;
+        case 'Naiara':
+          participante = "Naiara";
+          share = "mcnuggets/naiara";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/NA3.png"); break;
+        case 'Paulo André':
+          participante = "Paulo André";
+          share = "mcnuggets/paulo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/PA3.png"); break;
+        case 'Pedro Scooby':
+          participante = "Pedro Scooby";
+          share = "mcnuggets/scooby";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/P3.png"); break;
+        case 'Rodrigo':
+          participante = "Rodrigo";
+          share = "mcnuggets/rodrigo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/R3.png"); break;
+        case 'Vinicius':
+          participante = "Vinicius";
+          share = "mcnuggets/vinicius";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/V3.png"); break;
+        default: break;
+      }
+    } else if (selectedMegaToShare == "Mega McFritas") {
+      $("#lanche-selecionado").html("sua MEGA McFritas");
+      lanche = "Mega McFritas";
+      $("#text-selecionado").html("Se escolheu compartilhar a sua Mega McFritas é porque não vê problema em dividir. Um pega a batata do outro e fica tudo certo: menos discórdia, mais crocância, olho no olho, paz e amor. O que acontece quando só resta uma batata na caixinha, é outra história.");
+
+      switch (selectedBrotherToShare) {
+        case 'Arthur':
+          participante = "Arthur";
+          share = "mcfritas/arthur";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/A1.png"); break;
+        case 'Brunna':
+          participante = "Brunna";
+          share = "mcfritas/brunna";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/BR1.png"); break;
+        case 'Bárbara':
+          participante = "Bárbara";
+          share = "mcfritas/barbara";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/BAR1.png"); break;
+        case 'Douglas':
+          participante = "Douglas";
+          share = "mcfritas/douglas";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/D1.png"); break;
+        case 'Eliezer':
+          participante = "Eliezer";
+          share = "mcfritas/eliezer";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/EL1.png"); break;
+        case 'Eslovênia':
+          participante = "Eslovênia";
+          share = "mcfritas/eslovenia";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/ESL1.png"); break;
+        case 'Gustavo':
+          participante = "Gustavo";
+          share = "mcfritas/gustavo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/G1.png"); break;
+        case 'Jessilane':
+          participante = "Jessilane";
+          share = "mcfritas/jessi";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/J1.png"); break;
+        case 'Jade Picon':
+          participante = "Jade Picon";
+          share = "mcfritas/jade";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/JA1.png"); break;
+        case 'Laís':
+          participante = "Laís";
+          share = "mcfritas/lais";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LA1.png"); break;
+        case 'Larissa':
+          participante = "Larissa";
+          share = "mcfritas/larissa";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LAR1.png"); break;
+        case 'Luciano':
+          participante = "Luciano";
+          share = "mcfritas/luciano";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/L1.png"); break;
+        case 'Linn':
+          participante = "Linn";
+          share = "mcfritas/linn";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LIN1.png"); break;
+        case 'Lucas':
+          participante = "Lucas";
+          share = "mcfritas/lucas";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LU1.png"); break;
+        case 'Maria':
+          participante = "Maria";
+          share = "mcfritas/maria";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/MA1.png"); break;
+        case 'Natália':
+          participante = "Natália";
+          share = "mcfritas/natalia";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/N1.png"); break;
+        case 'Naiara':
+          participante = "Naiara";
+          share = "mcfritas/naiara";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/NA1.png"); break;
+        case 'Paulo André':
+          participante = "Paulo André";
+          share = "mcfritas/paulo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/PA1.png"); break;
+        case 'Pedro Scooby':
+          participante = "Pedro Scooby";
+          share = "mcfritas/scooby";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/P1.png"); break;
+        case 'Rodrigo':
+          participante = "Rodrigo";
+          share = "mcfritas/rodrigo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/R1.png"); break;
+        case 'Vinicius':
+          participante = "Vinicius";
+          share = "mcfritas/vinicius";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/V1.png"); break;
+        default: break;
+      }
+    } else if (selectedMegaToShare == "Mega McFlurry") {
+      $("#lanche-selecionado").html("seu MEGA McFlurry");
+      lanche = "Mega McFlurry";
+      $("#text-selecionado").html("Dias quentes pedem McFlurry em tamanho Mega: para esfriar a cabeça com seu brother favorito naquela vibe mó paz, tranquila. Cabe a você decidir se divide até o fim ou guarda pra comer sozinho mais tarde.");
+
+      switch (selectedBrotherToShare) {
+        case 'Arthur':
+          participante = "Arthur";
+          share = "mcflurry/arthur";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/A2.png"); break;
+        case 'Brunna':
+          participante = "Brunna";
+          share = "mcflurry/brunna";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/BR2.png"); break;
+        case 'Bárbara':
+          participante = "Bárbara";
+          share = "mcflurry/barbara";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/BAR2.png"); break;
+        case 'Douglas':
+          participante = "Douglas";
+          share = "mcflurry/douglas";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/D2.png"); break;
+        case 'Eliezer':
+          participante = "Eliezer";
+          share = "mcflurry/eliezer";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/EL2.png"); break;
+        case 'Eslovênia':
+          participante = "Eslovênia";
+          share = "mcflurry/eslovenia";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/ESL2.png"); break;
+        case 'Gustavo':
+          participante = "Gustavo";
+          share = "mcflurry/gustavo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/G2.png"); break;
+        case 'Jessilane':
+          participante = "Jessilane";
+          share = "mcflurry/jessi";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/J2.png"); break;
+        case 'Jade Picon':
+          participante = "Jade Picon";
+          share = "mcflurry/jade";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/JA2.png"); break;
+        case 'Laís':
+          participante = "Laís";
+          share = "mcflurry/lais";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LA2.png"); break;
+        case 'Larissa':
+          participante = "Larissa";
+          share = "mcflurry/larissa";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LAR2.png"); break;
+        case 'Luciano':
+          participante = "Luciano";
+          share = "mcflurry/luciano";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/L2.png"); break;
+        case 'Linn':
+          participante = "Linn";
+          share = "mcflurry/linn";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LIN2.png"); break;
+        case 'Lucas':
+          participante = "Lucas";
+          share = "mcflurry/lucas";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/LU2.png"); break;
+        case 'Maria':
+          participante = "Maria";
+          share = "mcflurry/maria";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/MA2.png"); break;
+        case 'Natália':
+          participante = "Natália";
+          share = "mcflurry/natalia";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/N2.png"); break;
+        case 'Naiara':
+          participante = "Naiara";
+          share = "mcflurry/naiara";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/NA2.png"); break;
+        case 'Paulo André':
+          participante = "Paulo André";
+          share = "mcflurry/paulo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/PA2.png"); break;
+        case 'Pedro Scooby':
+          participante = "Pedro Scooby";
+          share = "mcflurry/scooby";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/P2.png"); break;
+        case 'Rodrigo':
+          participante = "Rodrigo";
+          share = "mcflurry/rodrigo";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/R2.png"); break;
+        case 'Vinicius':
+          participante = "Vinicius";
+          share = "mcflurry/vinicius";
+          $("#imagem-selecionado").attr("src", "./img/comp/jpgs/V2.png"); break;
+        default: break;
+      }
+    }
+
+    $("#shareface").attr("href", shareface + share + "&quote=Eu compartilho meu lanche " + lanche + " com " + participante);
+    $("#sharetwt").attr("href", sharetwt + share + "&text=Eu compartilho meu lanche " + lanche + " com " + participante);
+    $("#sharemail").attr("href", sharemail + "Eu compartilho meu lanche " + lanche + " com " + participante + " - " + sharelink + share);
+    $("#sharelink").val(sharelink + share);
+
+    $(".page-2").fadeIn();
+  }
+</script>
+
+</html>

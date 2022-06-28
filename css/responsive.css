@@ -1,0 +1,440 @@
+@media (max-width: 1440px) {
+  .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -60px;
+    display: block !important;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -60px;
+    display: block !important;
+  }
+
+  .escolha {
+    text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: 'speedee_Bd';
+    padding: 2.5rem;
+  }
+
+  .escolha_mc {
+    text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: 'speedee_Bd';
+  }
+}
+
+@media (max-width: 1024px) {
+  .cheedar {
+    bottom: -21%;
+    right: 5%;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -30px;
+    display: block !important;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    display: block !important;
+  }
+
+  .owl-nav>.owl-prev>span {
+    width: 65%;
+  }
+
+  .owl-nav>.owl-next>span {
+    width: 65%
+  }
+
+  .escolha {
+    text-align: center;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-family: 'speedee_Bd';
+    padding: 0.5rem;
+  }
+
+  .escolha_mc {
+    text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: 'speedee_Bd';
+  }
+
+  .selector_mc .image_brother .chicken {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 1.1rem;
+  }
+
+  .selector_mc .image_brother .fritas {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 1.1rem;
+  }
+
+  .selector_mc .image_brother .mms {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 1.1rem;
+  }
+
+  .button_share {
+    background-image: url(../img/02.Meio/Botão.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 8rem;
+    align-items: center;
+    margin: 1rem auto;
+    position: relative;
+    width: 34% !important;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+  }
+
+  .bonecos {
+    width: 45%;
+  }
+
+  .texto {
+    font-family: 'speedee_Rg';
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .up .texto {
+    color: #ffa50d;
+    font-family: 'speedee_Bd';
+    width: 100%;
+    font-size: 20px;
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: auto !important;
+  }
+
+  .page-2 {
+    background-size: contain !important;
+  }
+
+  .selector_brother {
+    background-size: contain !important;
+    background-position-y: -2% !important;
+  }
+
+  .brother_active,
+  .active_mc {
+    border: 3px solid #FFA50D !important;
+  }
+
+  .fritas_dsk img {
+    width: 100%;
+  }
+
+  .flurry img {
+    width: 100%;
+  }
+
+  .fritas img {
+    width: 100%;
+  }
+
+  .is_desktop {
+    display: none;
+  }
+
+  .is_mobile {
+    display: block;
+  }
+
+  .escolha {
+    text-align: left;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-family: 'speedee_Bd';
+    padding: 4.5rem;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -30px;
+    display: block !important;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    display: block !important;
+  }
+
+  .owl-nav>.owl-prev>span {
+    width: 30%;
+  }
+
+  .owl-nav>.owl-next>span {
+    width: 30%;
+  }
+
+  .up {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .up .texto {
+    color: #ffa50d;
+    font-family: 'speedee_Bd';
+    width: 48%;
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .social_media {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .social_media>a,
+  .social_media>img {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body .icons a {
+    width: 125px;
+  }
+
+  .selector_brother {
+    background-size: contain !important;
+    background-position-y: -27px !important;
+  }
+
+  .title {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 1rem;
+  }
+
+  .title img {
+    width: 40%;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .is_desktop {
+    display: none;
+  }
+
+  .is_mobile {
+    display: block;
+  }
+
+  .escolha {
+    padding: 0 0 0px 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .escolha p span {
+    font-size: 1.4rem;
+  }
+
+  .mobile_nopadding {
+    padding: 0 !important;
+  }
+
+  .bg-red {
+    background-color: #c40007;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-flex;
+  }
+
+  .bg-red span {
+    font-size: 5rem;
+    color: #ffa50d;
+  }
+
+  .subtitle p {
+    color: #292929;
+    font-family: 'speedee_Rg';
+    font-size: 1.2rem;
+    padding: 2% 16%;
+  }
+
+  .imagem .imagem_topo {
+    width: 100%;
+  }
+
+  .imagem .chevron {
+    width: 20%;
+  }
+
+  .button_share {
+    background-image: url(../img/02.Meio/Botão.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 8rem;
+    align-items: center;
+    margin: 1rem auto;
+    position: relative;
+    width: 60% !important;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    margin-top: 60px !important;
+  }
+
+  .selector_mc .image_brother .chicken {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 0.6rem;
+  }
+
+  .image_brother p {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 0.8rem;
+  }
+
+  .image_mc img {
+    width: 100%;
+  }
+
+  .logo_mc img {
+    width: 100%;
+  }
+
+  .bonecos {
+    width: 35%;
+  }
+
+  .texto {
+    font-family: 'speedee_Rg';
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .texto p {
+    margin-bottom: 0.5rem;
+  }
+
+  .up .texto {
+    color: #ffa50d;
+    font-family: 'speedee_Bd';
+    width: 53%;
+    font-size: 13px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .escolha_mc {
+    text-align: center;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-family: 'speedee_Bd';
+  }
+
+  .escolha_mc>p span {
+    font-size: 1.6rem;
+  }
+
+  .selector_mc .image_brother .fritas {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 0.7rem;
+  }
+
+  .selector_mc .image_brother .mms {
+    position: absolute;
+    align-items: center;
+    top: 84%;
+    left: -50%;
+    right: -50%;
+    font-size: 0.7rem;
+  }
+
+  .up {
+    padding: 1rem 0;
+    text-align: center;
+    align-items: end;
+  }
+
+  /* .social_media img {
+    width: 100%;
+    padding: 0 1rem;
+  } */
+
+  .page-2 {
+    background-position: bottom;
+  }
+
+  .comp-text {
+    font-family: 'speedee_Bd';
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .page-2 #text-selecionado {
+    font-family: 'speedee_Rg';
+    color: #fff;
+    font-size: 18px;
+    padding: 1rem 2rem !important;
+  }
+
+  #shareBtn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px){
+  .selector_brother {
+    background-size: contain !important;
+    background-position-y: -17px !important;
+  }
+}
