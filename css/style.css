@@ -110,7 +110,7 @@ body {
 }
 
 .title h1 {
-  font-family: "RatioModern-Small";
+  font-family: "RatioModern";
   font-size: 5rem;
   margin: 0;
   padding-right: 0.5rem;
@@ -125,7 +125,7 @@ body {
 }
 
 .title_acordo h2 {
-  font-family: "RatioModern-Small";
+  font-family: "RatioModern";
   font-size: 4rem;
   padding: 1rem 0 2rem;
   margin: 0;
@@ -137,7 +137,8 @@ body {
 .title_acordo p {
   font-size: 1.62rem;
   padding: 1rem 7.7rem;
-  font-family: 'RobotoRegular';
+  font-family: "RobotoRegular";
+  font-weight: 600;
 }
  
 .bg-red {
@@ -160,12 +161,13 @@ body {
 .subtitle p {
   color: #fff;
   font-family: "RobotoRegular";
-  font-size: 1.5rem;
-  padding: 1% 25%;
+  font-size: 2rem;
+  padding: 1% 15%;
 }
 
 .subtitle b {
   font-family: "RobotoBold";
+  font-size: 2rem;
 }
 
 .btn-entenda {
@@ -215,16 +217,32 @@ body {
 .first-cite {
   font-size: 1.5rem;
   font-family: "RobotoRegular";
+  font-weight: 600;
+}
+
+.acordo-abs .first-cite {
+  font-size: 1.5rem;
+  font-family: "RobotoRegular";
+  font-weight: 600;
+  padding: 0 4rem;
 }
 
 .first-cite p {
   margin: 5rem;
   color: #262626;
+  font-weight: 600;
 }
 
 .second-cite {
   font-family: "RobotoBold";
   margin: 2.5rem;
+}
+
+.acordo-abs .second-cite {
+  font-family: "RobotoBold";
+  margin: 7rem 1rem 2rem 0;
+  position: relative;
+  left: -1%;
 }
 
 .start-quote {
@@ -238,6 +256,17 @@ body {
 blockquote {
   margin: 0 0rem;
   width: 62%;
+  font-family: "RatioModern";
+  font-weight: 600;
+}
+
+.acordo-abs blockquote {
+  margin: 0 0rem;
+  width: 100%;
+  font-size: 2rem;
+  font-family: "RatioModern";
+  font-weight: 600;
+  padding: 0 4rem 0 0;
 }
 
 cite {
@@ -254,6 +283,14 @@ cite {
   display: inline-flex;
 }
 
+.acordo-abs .author {
+  margin: 0rem auto;
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+  padding: 0 15rem;
+}
+
 cite:before {
   content: " \2015 ";
 }
@@ -268,7 +305,7 @@ cite:before {
 
 .bg-white {
   background-color: #fff;
-  padding: 5rem 8rem !important;
+  padding: 5rem 8rem 0 !important;
 }
 
 .projetos h2 {
@@ -320,8 +357,8 @@ cite:before {
 
 .fazer {
   position: absolute;
-  top: 36.5%;
-  right: 15.5%;
+  top: 20.4%;
+  right: 21%;
 }
 
 .btn-fazer {
@@ -342,8 +379,8 @@ cite:before {
 
 .fazer2 {
   position: absolute;
-  top: 63.4%;
-  right: 77%;
+  top: 32.6%;
+  right: 71%;
 }
 
 .btn-fazer2 {
@@ -469,4 +506,10 @@ cite:before {
 
 .repasses .vermelho {
   color: #BB1C07 !important;
+}
+
+.grafico2 {
+  position: relative;
+    left: -30%;
+    min-width: 100rem;
 }
