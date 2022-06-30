@@ -314,7 +314,7 @@ cite:before {
 
 .acordo-abs {
   position: relative;
-  z-index: 999;
+  z-index: 959;
   top: -14rem;
 }
 
@@ -442,6 +442,7 @@ cite:before {
 
 .repasses .repasses-item {
   background-color: #E3E7EA;
+  border-right: 8px solid #C31707;
 }
 
 .repasses .repasses-item-icon {
