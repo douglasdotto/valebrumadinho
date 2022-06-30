@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: "RatioModern";
+  src: url("../fonts/Ratio\ Modern.ttf");
+}
+
+@font-face {
   font-family: "RobotoBold";
   src: url("../fonts/Roboto-Bold.ttf");
 }
@@ -46,7 +51,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #fff;
-  border-radius: 20px;
 }
 
 /* Handle on hover */
@@ -75,7 +79,7 @@ body {
 }
 
 .bg-gray {
-  background-color: #efefef;
+  background-color: #E3E7EA;
 }
 
 .b-red {
@@ -247,19 +251,36 @@ cite:before {
 }
 
 .projetos h2 {
-  font-family: "RatioModern-Bold";
+  font-family: "RatioModern";
   color: #cc0000;
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.projetos .pp {
+  font-family: "RobotoBold";
+  font-size: 1.8rem;
+  margin: 0 2rem 2rem;
+  color: #2D2D2D;
+  width: 60%;
+  line-height: 35px;
+  display: inline-flex;
 }
 
 .projetos p {
-  font-family: "RobotoBold";
-  font-size: 1.5rem;
-  margin: 0 2rem 2rem;
-  color: #666666;
-  width: 45%;
-  display: inline-flex;
+  font-family: "RobotoRegular";
+  font-size: 1.3rem;
+  color: #2D2D2D;
+  font-weight: 600;
+}
+
+.projetos .orange {
+  color: #955B2F !important;
+}
+
+.projetos .projeto-icon {
+  width: 125px;
+  margin: auto
 }
 
 .acordo-abs {
@@ -288,4 +309,113 @@ cite:before {
   font-size: 30px;
   top: -11px;
   left: 3px;
+}
+
+
+.fluxo h2 {
+  font-family: "RatioModern";
+  color: #cc0000;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.fluxo .fluxo-item-number {
+  background-color: #FFA267;
+  color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: auto
+}
+
+.fluxo .fluxo-item-number p {
+  font-size: 3.2rem;
+  margin: auto;
+  margin-top: -12px;
+  font-weight: 600;
+}
+
+.fluxo .fluxo-item-iniciativas {
+  background-color: #FFA267;
+  color: #666666;
+  padding: 2px;
+}
+
+.fluxo .fluxo-col-3 {
+  border-right: 4px solid #E8E8E8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fluxo .fluxo-item-icon {
+  max-width: 65px;
+}
+
+.fluxo .fluxo-item-border {
+  border-right: 4px solid #E8E8E8;
+  border-bottom: 4px solid #E8E8E8;
+  border-top: 4px solid #E8E8E8;
+}
+
+.fluxo .col-9 {
+  text-align: left !important;
+}
+
+.fluxo .fluxo-item-border span {
+  font-family: "RobotoRegular";
+  font-size: 1.4rem;
+  color: #666666;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.repasses h2 {
+  font-family: "RatioModern";
+  color: #cc0000;
+  font-size: 4rem;
+  font-weight: 600;
+  width: 60%;
+  display: inline-flex;
+}
+
+.repasses .pp {
+  font-family: "RobotoBold";
+  font-size: 1.8rem;
+  margin: 0 2rem 2rem;
+  color: #2D2D2D;
+  width: 60%;
+  display: inline-flex;
+  line-height: 35px;
+}
+
+.repasses .repasses-item {
+  background-color: #E3E7EA;
+}
+
+.repasses .repasses-item-icon {
+  max-width: 80px;
+  margin: auto;
+}
+
+.repasses .repasses-col-3 {
+  display: flex;
+}
+
+.repasses .col-10 {
+  text-align: left !important;
+}
+
+.repasses .repasses-item span {
+  font-family: "RobotoRegular";
+  font-size: 1.4rem;
+  color: #060606;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.repasses .vermelho {
+  color: #BB1C07 !important;
 }
