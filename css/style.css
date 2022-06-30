@@ -106,16 +106,36 @@ body {
 }
 
 .title h1 {
-  font-family: "speedee_Bd";
-  font-size: 4rem;
+  font-family: "RatioModern-Small";
+  font-size: 5rem;
   margin: 0;
   padding-right: 0.5rem;
-  width: 45%;
+  width: 60%;
   color: #fff;
   text-align: center;
   letter-spacing: 2px;
 }
 
+.title_acordo {
+  padding: 0 1rem;
+}
+
+.title_acordo h2 {
+  font-family: "RatioModern-Small";
+  font-size: 4rem;
+  padding: 1rem 0 2rem;
+  margin: 0;
+  color: #c40007;
+  text-align: center;
+  font-weight: 600
+}
+
+.title_acordo p {
+  font-size: 1.62rem;
+  padding: 1rem 7.7rem;
+  font-family: 'RobotoRegular';
+}
+ 
 .bg-red {
   background-color: #c40007;
   align-content: center;
@@ -244,6 +264,7 @@ cite:before {
 
 .bg-white {
   background-color: #fff;
+  padding: 5rem 8rem !important;
 }
 
 .projetos h2 {
@@ -253,30 +274,29 @@ cite:before {
   font-weight: 700;
 }
 
-.projetos p {
+.title_acordo .text-bold {
   font-family: "RobotoBold";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0 2rem 2rem;
   color: #666666;
-  width: 45%;
-  display: inline-flex;
+  text-align: center;
 }
 
 .acordo-abs {
-  bottom: 12rem;
-  height: 10rem;
-  margin: 0 -8rem;
+  position: relative;
+  z-index: 999;
+  top: -14rem;
 }
 
 .fazer {
   position: absolute;
-  top: 22%;
-  right: 15%;
+  top: 36.5%;
+  right: 15.5%;
 }
 
 .btn-fazer {
   color: #fc8332;
-  border: 1px solid #fc8332;
+  border: 2px solid #fc8332;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -286,6 +306,28 @@ cite:before {
 .span-fazer {
   position: absolute;
   font-size: 30px;
-  top: -11px;
+  top: -12px;
+  left: 3px;
+}
+
+.fazer2 {
+  position: absolute;
+  top: 63.4%;
+  right: 77%;
+}
+
+.btn-fazer2 {
+  color: #c4170c;
+  border: 2px solid #c4170c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.span-fazer2 {
+  position: absolute;
+  font-size: 30px;
+  top: -12px;
   left: 3px;
 }
