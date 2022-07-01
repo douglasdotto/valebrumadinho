@@ -344,7 +344,7 @@ cite:before {
 
 .fazer {
   position: absolute;
-  top: 6%;
+  top: 14%;
   right: 0%;
   cursor: pointer;
   width: 200px;
@@ -353,7 +353,7 @@ cite:before {
 
 .fazer2 {
   position: absolute;
-  bottom: 11%;
+  bottom: 5%;
   left: 0%;
   cursor: pointer;
   width: 200px;
