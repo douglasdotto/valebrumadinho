@@ -72,6 +72,20 @@
     .imagem2 {
         min-height: 30rem !important;
     }
+
+    .modal-fazer {
+        padding: 1rem 0rem;
+        width: 75%;
+    }
+    .modal-pagar {
+        padding: 1rem 0rem;
+        width: 80%;   
+    }
+
+    .fazer-content ul, 
+    .fazer-content li {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 576px) {}

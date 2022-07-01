@@ -193,6 +193,10 @@ body {
   font-family: "RobotoRegular";
 }
 
+.btn-entenda:hover {
+  color: #000;
+}
+
 .imagem .chevron {
   width: 23%;
   padding: 0 0.3rem;
@@ -512,4 +516,65 @@ cite:before {
 footer {
   background-color: #C4160B;
   height: 75px;
+}
+
+.modal-fazer {
+  z-index: 969;
+  background-color: #FFF;
+  border: 1px solid #000;
+  padding: 1rem 0rem;
+  width: 50%;
+  box-shadow: rgb(0 0 0 / 30%) 10px 3px 20px;
+}
+
+.modal-pagar {
+  z-index: 969;
+  background-color: #FFF;
+  border: 1px solid #000;
+  padding: 1rem 0rem;
+  width: 65%;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.302) 10px 3px 20px;
+}
+
+.fazer-content ul {
+  padding: 2rem 2.7rem 0rem 1rem;
+  font-family: "RobotoRegular";
+  font-size: 1.2rem;
+  color: #767676;
+}
+
+.fazer-content li {
+  padding: 0.5rem 0;
+  font-family: "RobotoRegular";
+  font-size: 1.2rem;
+  color: #767676;
+}
+
+.no-bullet {
+  list-style: none;
+}
+
+.modal-fazer .btn-close {
+  border: 2px solid #fc8332;
+  border-radius: 25px;
+  filter: invert(57%) sepia(56%) saturate(1402%) hue-rotate(338deg) brightness(102%) contrast(98%);
+  position: relative;
+  float: right;
+  padding: 0.5rem;
+  width: 0.8em;
+    height: 0.8em;
+    opacity: 1;
+}
+
+.modal-pagar .btn-close {
+  border: 2px solid #fc8332;
+  border-radius: 25px;
+  filter: invert(29%) sepia(64%) saturate(2409%) hue-rotate(343deg) brightness(80%) contrast(99%);
+  position: relative;
+  float: right;
+  padding: 0.5rem;
+  width: 0.8em;
+    height: 0.8em;
+    opacity: 1;
 }

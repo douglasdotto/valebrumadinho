@@ -131,13 +131,47 @@
             já
             executados com medidas emergenciais. Entenda:</p>
         </div>
-
+        <div class="modal-fazer d-none position-absolute">
+          <div class="container">
+            <button id="close-modal-fazer" class="btn-close"></button>
+            <div class="fazer-content">
+              <ul>
+                <li class="no-bullet">Ações de compensação e reparacão nos territórios afetados</li>
+                <li>Programa de Reparação Socioeconômica*</li>
+                <li class="no-bullet">Projetos para Brumadinho (R$ 1,5 Bi)</li>
+                <li class="no-bullet">Projetos para Bacia do Paraopeba (R$ 2,5 Bi)</li>
+                <li>Programa de Reparação Socioambiental</li>
+                <li class="no-bullet">Recuperação Socioambiental (sem teto - R$ 5 Bi)</li>
+                <li class="no-bullet">Compensação Socioambiental (R$ 1,55 Bi)</li>
+                <li>FUNED e Biofábrica Wolbachia (R$ 135 MM)</li>
+                <li>TAC Defesa Civil e Bombeiros (R$ 168 MM)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div class="modal-pagar d-none position-absolute">
+            <div class="container">
+              <button id="close-modal-pagar" class="btn-close"></button>
+              <div class="fazer-content">
+                <ul>Ações compensatórias em todo o estado de MG
+                  <li>Demandas das Comunidades Atingidas (R$ 3 Bi, sendo R$ 1 Bi para microcrédito)</li>
+                  <li>Programa de Transferência de Renda (R$ 4,4 Bi)</li>
+                  <li>Projetos de Segurança Hídrica/Saneamento (R$ 2 Bi)</li>
+                  <li>Programa de Mobilidade Urbana (R$ 4,95 Bi)</li>
+                  <li>Programa de Fortalecimento dos Serviços Públicos (R$ 3,65 Bi - inclui R$ 1,5 Bi para repasses para 853 municípios mineiros)</li>
+                  <li>Ações de combate à covid-19 (R$ 1,5 Bi)</li>
+                  <li>Contratação de auditoria independente (R$ 700 M)</li>
+                  <li>Contratações temporárias de pessoal (R$ 300 M)</li>
+                </ul>
+              </div>
+            </div>
+        </div>
         <div style="position: relative;" class="mt-5 mb-2">
           <img src="img/gráfico_1.png" class="w-100" data-aos="fade-up" />
           <div class="fazer">
 
           </div>
-          <div class="fazer2">
+          <div class="fazer2 pagar">
 
           </div>
         </div>
@@ -666,6 +700,28 @@
 <script>
   $(document).ready(function () {
     AOS.init();
+
+    var fazer = document.querySelector('.fazer');
+    var pagar = document.querySelector('.pagar');
+
+    fazer.addEventListener('click', () => {
+      var modalFazer = document.querySelector('.modal-fazer');
+      modalFazer.classList.remove('d-none');
+      var btnCloseFazer = document.querySelector('#close-modal-fazer');
+      btnCloseFazer.addEventListener('click', () => {
+        modalFazer.classList.add('d-none');
+      })
+    })
+
+    pagar.addEventListener('click', () => {
+      var modalPagar = document.querySelector('.modal-pagar');
+      modalPagar.classList.remove('d-none');
+      var btnClosePagar = document.querySelector('#close-modal-pagar');
+      btnClosePagar.addEventListener('click', () => {
+        modalPagar.classList.add('d-none');
+      })
+    })
+
   });
 </script>
 
