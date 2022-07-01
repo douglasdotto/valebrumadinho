@@ -86,6 +86,9 @@
     .fazer-content li {
         font-size: 0.9rem;
     }
+    .barra__link .barra__title {
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 576px) {}
