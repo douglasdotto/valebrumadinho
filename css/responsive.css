@@ -94,13 +94,9 @@
 }
 
 @media (max-width: 576px) {
-    .grafico {
-        min-width: 35rem;
-    }
+   
 }
 
 @media (max-width: 400px) {
-    .grafico {
-        min-width: 20rem;
-    }
+    
 }
