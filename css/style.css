@@ -216,6 +216,9 @@ body {
   z-index: 1;
   width: 100%;
   text-align: center;
+  top: -50px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tag {
