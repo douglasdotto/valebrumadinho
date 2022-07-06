@@ -246,11 +246,12 @@ body {
 }
 
 .start-quote {
-  margin: -2rem 1rem;
-  width: 4rem;
+  margin: -1rem -0.9rem;
+  width: 5.5rem;
   font-size: 3.5rem;
   color: #C21708;
   font-family: "RobotoRegular";
+  padding: 1rem 0rem;
 }
 
 blockquote {
@@ -294,6 +295,10 @@ cite:before {
 .bg-white {
   background-color: #fff;
   padding: 0rem 6rem 0 !important;
+}
+
+.grafico {
+  min-width: 60rem;
 }
 
 .projetos h2 {
